@@ -2,7 +2,8 @@
 
 More details: https://github.com/meteor/meteor/issues/5445
          
-  2. Set this repository as the buildpack URL:
+Step 2 of original readme. 
+Set this repository as the buildpack URL:
 
         heroku buildpacks:set https://github.com/alykoshin/meteor-buildpack-horse-1202-fixed.git
 
