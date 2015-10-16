@@ -2,15 +2,14 @@
 
 More details: https://github.com/meteor/meteor/issues/5445
          
-2. Set this repository as the buildpack URL:
+  2. Set this repository as the buildpack URL:
+
         heroku buildpacks:set https://github.com/alykoshin/meteor-buildpack-horse-1202-fixed.git
 
 
 ---
 
-# Original README.md:
-
-### Meteor Buildpack Horse
+# Original README.md: # Meteor Buildpack Horse
 
 A heroku buildpack for Meteor v0.9.3+ (including 1.0 and up), using meteor's
 native packaging system and designed to be as simple and readable as possible.
