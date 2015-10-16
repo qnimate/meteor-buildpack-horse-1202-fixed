@@ -63,7 +63,16 @@ export CPPPATH="$CPATH"
 # Install meteor
 #
 echo "-----> Installing meteor"
-curl -sS https://install.meteor.com | HOME="$METEOR_DIR" /bin/sh
+
+
+echo
+echo "!!! Workaround for invalid url/version in Meteor install script"
+echo "!!! More details: https://github.com/meteor/meteor/issues/5445"
+echo
+curl https://raw.githubusercontent.com/tjmonsi/stable-meteor-install/master/meteorInstall.sh | HOME="$METEOR_DIR" /bin/sh
+# curl -sS https://install.meteor.com | HOME="$METEOR_DIR" /bin/sh
+
+
 METEOR="$METEOR_DIR/.meteor/meteor" # The meteor binary.
 
 #
