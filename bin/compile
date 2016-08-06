@@ -120,6 +120,10 @@ if [ -e "$COMPILE_DIR"/app/programs/server/package.json ]; then
   cd "$COMPILE_DIR"/app/programs/server && npm install
 fi
 
+if [ -e "$APP_SOURCE_DIR"/package.json ]; then
+  $METEOR_NPM install
+fi
+
 #
 # Environment
 #
